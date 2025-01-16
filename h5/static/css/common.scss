@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+view {
+	line-height: 1;
+}
+
+page {
+	background-color: #F4F5F8;
+}
+
+.status_bar {
+	height: var(--status-bar-height);
+}
+
+.page {
+	padding-top: calc(100rpx + var(--status-bar-height));
+}
+
+.headerBar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+
+	.headerBar-box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100rpx;
+		padding: 0 24rpx;
+	}
+}
+
+.up {
+	color: #25D77E;
+}
+
+.down {
+	color: #ED5727;
+}
